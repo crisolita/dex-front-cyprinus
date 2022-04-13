@@ -16,10 +16,10 @@ const PreseedPage = ({ match: { params } }) => {
     Object.values(currentPhase)?.length > 0;
   const price = isCurrentPhaseFetched
     ? fromWei(currentPhase.price.toString())
-    : "0,009";
+    : "0.01";
   const supply = isCurrentPhaseFetched
     ? fromWei(currentPhase.supply.toString())
-    : "1.000.000";
+    : "1.000.000.000";
   const name = isCurrentPhaseFetched ? currentPhase.name : "C1P";
   const minimunEntry = isCurrentPhaseFetched
     ? fromWei(currentPhase.minimunEntry.toString())
@@ -42,8 +42,8 @@ const PreseedPage = ({ match: { params } }) => {
             <div className="meta-b flex aic jc">
               <div className="m-left flex flex-col">
                 <div className="lbl s13 b4">Ronda Semilla</div>
-                <div className="lbl s13 b4">Bloqueo: 12 Meses</div>
-                <div className="lbl s13 b4">Vesting: 9 Meses</div>
+                <div className="lbl s13 b4">Bloqueo: 4 meses</div>
+                <div className="lbl s13 b4">Vesting: 6 meses</div>
               </div>
               <div className="m-right flex flex-col jce">
                 <div className="lbl s13 b6">

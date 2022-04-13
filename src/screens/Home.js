@@ -17,14 +17,14 @@ const Home = () => {
 
   const supply = isCurrentPhaseFetched
     ? fromWei(currentPhase.supply.toString())
-    : "150.000.000";
+    : "1.000.000.000";
   const phase = isCurrentPhaseFetched ? currentPhase.phase.toString() : "1";
   const price = isCurrentPhaseFetched
     ? fromWei(currentPhase.price.toString())
-    : "0,009";
+    : "0,01";
   const vesting = isCurrentPhaseFetched
     ? currentPhase.timesToRelease.length
-    : 9;
+    : 6;
   const minimunEntry = isCurrentPhaseFetched
     ? fromWei(currentPhase.minimunEntry.toString())
     : 100;

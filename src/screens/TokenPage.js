@@ -19,13 +19,13 @@ const TokenPage = () => {
     : "No se han creado fases";
   const supply = isCurrentPhaseFetched
     ? fromWei(currentPhase.supply.toString())
-    : "No se han creado fases";
+    : 0;
   const phase = isCurrentPhaseFetched ? currentPhase.phase.toString() : "1";
   const name = isCurrentPhaseFetched ? currentPhase.name : "Cyprinus";
   const symbol = isCurrentPhaseFetched ? currentPhase.symbol : "C1P";
   const minimunEntry = isCurrentPhaseFetched
     ? fromWei(currentPhase.minimunEntry.toString())
-    : 100;
+    : 0;
   const endAt = isCurrentPhaseFetched
     ? new Date(Number(currentPhase.endAt.toString()) * 1000).toDateString()
     : "No se han creado fases";
