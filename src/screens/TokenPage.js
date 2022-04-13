@@ -19,7 +19,7 @@ const TokenPage = () => {
     : "0.01";
   const supply = isCurrentPhaseFetched
     ? fromWei(currentPhase.supply.toString())
-    : 0;
+    : 50000000;
   const phase = isCurrentPhaseFetched ? currentPhase.phase.toString() : "1";
   const name = isCurrentPhaseFetched ? currentPhase.name : "Cyprinus";
   const symbol = isCurrentPhaseFetched ? currentPhase.symbol : "C1P";

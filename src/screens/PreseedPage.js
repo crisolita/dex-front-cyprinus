@@ -19,7 +19,7 @@ const PreseedPage = ({ match: { params } }) => {
     : "0.01";
   const supply = isCurrentPhaseFetched
     ? fromWei(currentPhase.supply.toString())
-    : "1.000.000.000";
+    : "50.000.000";
   const name = isCurrentPhaseFetched ? currentPhase.name : "C1P";
   const minimunEntry = isCurrentPhaseFetched
     ? fromWei(currentPhase.minimunEntry.toString())

@@ -17,7 +17,7 @@ const Home = () => {
 
   const supply = isCurrentPhaseFetched
     ? fromWei(currentPhase.supply.toString())
-    : "1.000.000.000";
+    : "50.000.000";
   const phase = isCurrentPhaseFetched ? currentPhase.phase.toString() : "1";
   const price = isCurrentPhaseFetched
     ? fromWei(currentPhase.price.toString())
