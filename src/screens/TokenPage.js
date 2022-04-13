@@ -16,7 +16,7 @@ const TokenPage = () => {
 
   const price = isCurrentPhaseFetched
     ? fromWei(currentPhase.price.toString())
-    : "No se han creado fases";
+    : "0.01";
   const supply = isCurrentPhaseFetched
     ? fromWei(currentPhase.supply.toString())
     : 0;

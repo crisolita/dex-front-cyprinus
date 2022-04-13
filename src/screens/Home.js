@@ -83,7 +83,7 @@ const Home = () => {
                   className="lbl-2 s13 b4 flex"
                   style={{ marginBottom: "6px" }}
                 >
-                  2023
+                  4 meses
                 </div>
                 <div className="lbl-3 s13 b5 flex">Vesting</div>
                 <div className="lbl-3 s13 flex" style={{ marginBottom: "6px" }}>
