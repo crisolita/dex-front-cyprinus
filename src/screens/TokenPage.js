@@ -16,10 +16,10 @@ const TokenPage = () => {
 
   const price = isCurrentPhaseFetched
     ? fromWei(currentPhase.price.toString())
-    : "0,009";
+    : "No se han creado fases";
   const supply = isCurrentPhaseFetched
     ? fromWei(currentPhase.supply.toString())
-    : "18,400,000";
+    : "No se han creado fases";
   const phase = isCurrentPhaseFetched ? currentPhase.phase.toString() : "1";
   const name = isCurrentPhaseFetched ? currentPhase.name : "Cyprinus";
   const symbol = isCurrentPhaseFetched ? currentPhase.symbol : "C1P";
@@ -28,10 +28,10 @@ const TokenPage = () => {
     : 100;
   const endAt = isCurrentPhaseFetched
     ? new Date(Number(currentPhase.endAt.toString()) * 1000).toDateString()
-    : "Aug 06 2021 12:00:00 UTC";
+    : "No se han creado fases";
   const vesting = isCurrentPhaseFetched
     ? currentPhase.timesToRelease.length
-    : 9;
+    : "No se han creado fases";
 
   return (
     <div className="token-page flex">
