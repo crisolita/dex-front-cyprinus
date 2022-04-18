@@ -36,11 +36,6 @@ const Header = ({ canShowAdminPanel }) => {
         </div>
         <div className="right flex aic">
           <div className="items flex aic">
-            <div className="li c111 font">Inicio</div>
-            <div className="li c111 font">Funcionalidades</div>
-            <div className="li c111 font">Marketplace</div>
-            <div className="li c111 font">Cripto</div>
-            <div className="li c111 font">Ayuda</div>
             {canShowAdminPanel && (
               <Link className="li c111 fon" to="/admin">
                 Admin
